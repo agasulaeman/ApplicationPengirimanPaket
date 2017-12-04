@@ -11,6 +11,12 @@ package com.MasterData;
  */
 public class Tarif {
 
+    public Tarif() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
+
     /**
      * @return the hargaBarang
      */
@@ -90,7 +96,8 @@ public class Tarif {
      * @return the hargaPaket
      */
     public double getHargaPaket() {
-        return hargaPaket;
+        double Tarif =0.0;
+        return Tarif;
     }
 
     /**

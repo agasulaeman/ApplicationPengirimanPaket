@@ -38,13 +38,13 @@ private Tarif paketTarif;
        return reg;
    }
    public double hitunganHargaKirimPaketKilatNonAsuransi(int inx){
-       double reg =0.0;
+       double kilat =0.0;
        TarifDao tff = new TarifDao();
        Tarif trf = new Tarif();
        IndexPaket indPaket = new IndexPaket();
        indPaket = tff.getIndexPakets().get(inx);
-       reg =  indPaket.getKilat()*getBerat();
-       return reg;
+       kilat =  indPaket.getKilat()*getBerat();
+       return kilat;
    }
    public double hitunganHargaKirimPaketSDSNonAsuransi(int inx){
        double reg =0.0;
@@ -122,6 +122,10 @@ private Tarif paketTarif;
      */
     public void setBerat(double berat) {
         this.berat = berat;
+    }
+
+    public String biaya() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

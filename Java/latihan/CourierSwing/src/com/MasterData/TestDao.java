@@ -19,7 +19,7 @@ public class TestDao {
     public static void main(String[] args) {
 //      List<IndexPaket>getIndexPakets = TarifDao.getIndexPakets<>();
         IndexPaket i = new IndexPaket();
-      i = getIndexPakets.get(8);
+//      i = (8);
               double hargaTotalRegulerNonAsuransi= i.getReguler()*5;
         System.out.println(i.getTujuan()+hargaTotalRegulerNonAsuransi);
         double hargaTotalKilatNonAsuransi =i.getKilat()*3;
